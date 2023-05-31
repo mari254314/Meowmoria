@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "Nintendo DS BIOS";
+  src: url(./../assets/fonts/Nintendo-DS-BIOS.ttf);
+  src: url(./../assets/fonts/Nintendo\ DS\ BIOS\ Regular.woff2)
+}
+
+@font-face {
+  font-family: "3Dventure";
+  src: url(./../assets/fonts/3Dventure.ttf);
+  src: url(./../assets/fonts/3Dventure.woff2)
+}
+
+body {
+  font-family: "Nintendo DS BIOS", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  box-shadow: -0.625rem 0 0 0 black, 0.625rem 0 0 0 black, 0 -0.625rem 0 0 black,
+    0 0.625rem 0 0 black;
+  height: 2rem;
+  margin: 0.625rem;
+  font-size: 1.875rem;
+}
+
+.icon-header {
+  width: 100%;
+}
+
+h1 {
+  font-family: "3Dventure";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 5.313rem;
+  text-align: center;
+}
+
+.general-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.page-title {
+  padding: 3rem 0 1.25rem;
+}
+
+.page-subtitle {
+  font-size: 1.875rem;
+}
+
+.sign-up-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.875rem;
+  padding-top: 2.5rem;
+}
+
+.user-data {
+  border: 0.031rem solid black;
+  box-shadow: -0.188rem 0 0 0 black, 0.188rem 0 0 0 black, 0 -0.188rem 0 0 black,
+    0 0.188rem 0 0 black;
+  display: flex;
+  padding: 1.875rem 3.125rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.username-password-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+
+.login-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.login-input {
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+  border: 0.063rem solid black;
+  padding: 0.5rem;
+  width: 100%;
+  box-shadow: -0.125rem 0 0 0 black, 0.125rem 0 0 0 black, 0 -0.125rem 0 0 black,
+  0 0.125rem 0 0 black;
+}
+
+.login-button-container {
+  display: flex;
+  background: #000000;
+  height: 2.125rem;
+  margin-top: 1.875rem;
+  color: #fffefe;
+  box-shadow: -0.438rem 0 0 0 black, 0.438rem 0 0 0 black, 0 -0.438rem 0 0 black,
+    0 0.438rem 0 0 black;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  transition: all 0.1s ease-in-out;
+  text-decoration: none;
+}
+
+.botao-entrar {
+  background: #000000;
+  color: #fffefe;
+}
+
+.login-button-container:hover, .sign-up-option-button:hover {
+  transform: scale(1.05);
+}
+
+.sign-up-option-container {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0 3rem 0;
+  width: 100%;
+}
+
+.sign-up-option-button {
+  text-decoration: none;
+  display: flex;
+  padding: 0.500rem 0 0.500rem 0;
+  background: #fffefe;
+  font-family: "Nintendo DS BIOS";
+  color: #000000;
+  box-shadow: -0.150rem 0 0 0 black, 0.150rem 0 0 0 black, 0 -0.150rem 0 0 black,
+    0 0.150rem 0 0 black;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.1s ease-in-out;
+  width: 85%;
+}
+
+#both-inputs-invalid {
+  font-size: 1.7rem;
+  color: red;
+  margin: 1rem;
+}
+
+/*FOOTER*/
+footer {
+  font-family: "Nintendo DS BIOS";
+  font-size: 1.25rem;
+  color: #fffefe;
+  background-color: #000000;
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: auto;
+}

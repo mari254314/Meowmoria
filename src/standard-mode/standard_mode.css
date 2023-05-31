@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Nintendo DS BIOS";
+  src: url(./../assets/fonts/Nintendo-DS-BIOS.ttf);
+  src: url(./../assets/fonts/Nintendo\ DS\ BIOS\ Regular.woff2)
+}
+
+@font-face {
+  font-family: "3Dventure";
+  src: url(./../assets/fonts/3Dventure.ttf);
+  src: url(./../assets/fonts/3Dventure.woff2)
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Nintendo DS BIOS", sans-serif;
+  font-size: 2.5rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.main-header {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  box-shadow: -0.625rem 0 0 0 black, 0.625rem 0 0 0 black, 0 -0.625rem 0 0 black, 0 0.625rem 0 0 black;
+  height: 2rem;
+  margin: 0.625rem;
+  justify-content: space-between;
+  font-size: 1.875rem;
+}
+
+.right-navigation, .left-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+.left-navigation {
+  padding-left: 2rem;
+}
+
+.logoff-icon {
+  padding-left: 0.5rem;
+  transform: scaleX(-1);
+}
+
+.icon-android {
+  padding-left: 2rem;
+}
+
+.navigation-option {
+  display: flex;
+  flex-direction: row;
+  padding-right: 2rem;
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.navigation-option:hover {
+  transform: scale(1.05);
+}
+
+.header-nav-icons {
+  padding-right: 0.5rem;
+}
+
+.general-container {
+  display: flex;
+  padding: 2.5rem 0 0 6rem;
+}
+
+.lateral-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: default;
+}
+
+.game-time {
+  text-align: center;
+}
+
+.input-specification {
+  text-align: center;
+  font-size: 2.188rem;
+  box-shadow: -0.156rem 0 0 0 black,
+  0.156rem 0 0 0 black,
+  0 -0.156rem 0 0 black,
+  0 0.156rem 0 0 black;
+}
+
+.timer {
+  font-size: 4.375rem;
+}
+
+.game-specifications {
+  display: flex;
+  padding-top: 3rem;
+  font-size: 1.875rem;
+}
+
+.board-size-container {
+  padding-left: 2rem;
+}
+
+.plays-counter-container{
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  font-size: 1.875rem;
+}
+
+.counter-title{
+  padding-right: 10px;
+}
+
+.counter-quantity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4.375rem;
+  height: 2.188rem;
+  background-color: black;
+  color: white;
+  box-shadow: -0.156rem 0 0 0 black,
+  0.156rem 0 0 0 black,
+  0 -0.156rem 0 0 black,
+  0 0.156rem 0 0 black;
+}
+
+.cheat-mode-container {
+  display: flex;
+  font-size: 1.875rem;
+  padding-top: 5rem;
+}
+
+.cheat-mode-icon {
+  width: 1.5rem;
+  padding-left: 0.5rem;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.cheat-button {
+  display: flex;
+  align-items: center;
+  border-color: #000;
+  box-shadow: -0.156rem 0 0 0 black,
+  0.156rem 0 0 0 black,
+  0 -0.156rem 0 0 black,
+  0 0.156rem 0 0 black;
+  cursor: pointer;
+  padding: 0.5rem 0.7rem;
+  width: 18rem;
+}
+
+.middle-container {
+  padding-left: 15rem;
+  width: 54rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  background: rgba(221, 221, 221);
+  padding: 2rem;
+  box-shadow: -0.156rem 0 0 0 black,
+  0.156rem 0 0 0 black,
+  0 -0.156rem 0 0 black,
+  0 0.156rem 0 0 black;
+  align-items: center;
+  justify-content: center;
+}
+
+.ranking-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.ranking-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1.875rem 0 1.875rem 0;
+}
+
+.horizontal-line {
+  background-color: #000;
+  height: 0.125rem;
+  margin: 0;
+}
+
+.ranking-card {
+  padding-bottom: 1rem;
+}
+
+.ranking-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem;
+  font-size: 1.875rem;
+  box-shadow: -0.156rem 0 0 0 black,
+  0.156rem 0 0 0 black,
+  0 -0.156rem 0 0 black,
+  0 0.156rem 0 0 black;
+}
+
+.player-name-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.defeat-icon {
+  width: 1.458rem;
+}
+
+.player-name {
+  padding-left: 0.5rem;
+}
+
+.date-time-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.ranking-time {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.438rem;
+}
+
+.trophy-icon {
+  width: 1.875rem;
+  filter: invert(81%) sepia(35%) saturate(2502%) hue-rotate(357deg) brightness(99%) contrast(107%);
+}
+
+.tabuleiro {
+  display: flex;
+}
+
+.board-container-4x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 4fr);
+  grid-template-rows: repeat(4, 4fr);
+  grid-column-gap: 0.625rem;
+  grid-row-gap: 0.625rem;
+}
+
+.board-container-6x6 {
+  display: grid;
+  grid-template-columns: repeat(6, 4fr);
+  grid-template-rows: repeat(6, 4fr);
+  grid-column-gap: 0.625rem;
+  grid-row-gap: 0.625rem;
+}
+
+.board-container-8x8 {
+  display: grid;
+  grid-template-columns: repeat(8, 4fr);
+  grid-template-rows: repeat(8, 4fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.card-place {
+  position: relative;
+  width: 5rem;
+  height: 5.5rem;
+  cursor: pointer;
+  box-shadow: -0.150rem 0 0 0 black, 0.150rem 0 0 0 black, 0 -0.150rem 0 0 black,
+  0 0.150rem 0 0 black;
+  background-color: #000;
+}
+
+.card-back, .card-front {
+  cursor: pointer;
+  position: absolute;
+  transition: transform .6s cubic-bezier(0.4, 0.0, 0.2, 1);
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background: #000;
+  width: 50%;
+  height: 50%;
+  padding: 1.3rem;
+  user-select: none;
+}
+
+.card-front {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(180deg) rotateZ(50deg);
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card-front-image {
+  width: 4rem;
+}
+
+
+.card-place.flipped .card-back {
+  transform: rotateY(180deg) rotateZ(50deg);
+}
+
+.card-place.flipped .card-front {
+  transform: rotateY(0) rotateZ(0);
+}
